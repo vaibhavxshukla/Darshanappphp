@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Responsive Sidebar Menu  | CodingLab </title>-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Shri Ram Parivar Navdurga Durgapuja Samiti</title>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+ 
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+   <link rel="stylesheet" href="../css/style.css">
+   </head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="sidebar">
+    <div class="logo-details">
+     <!-- <i class='bx bxl-c-plus-plus icon'></i>-->
+        <div class="logo_name">Darsanapp</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+
+      
+      <li >
+       <a class="" href="#">
+          <i class="bx bx-upload " aria-hidden="false"></i>
+          <span class="links_name">Gallery upload</span>
+        </a>
+         <span class="tooltip">Gallery upload</span>
+      </li>
+      
+      <li>
+       <a href="#">
+         <i class='bx bx-upload' ></i>
+         <span class="links_name">Events Details</span>
+       </a>
+       <span class="tooltip">Events Details</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-upload' ></i>
+         <span class="links_name">AAJ KE DARSHAN</span>
+       </a>
+       <span class="tooltip">AAJ KE DARSHAN UPLOAD</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-upload' ></i>
+         <span class="links_name">Expenses Upload</span>
+       </a>
+       <span class="tooltip">Expenses Upload</span>
+
+
+
+     </li>
+
+  
+
+
+
+     <li class="profile">
+      <a href="../login/logout.php">
+         <i class='bx bx-log-out' id="log_out" ></i>
+		 <span class="links_name">Logout</span>
+		 </a>
+     </li>
+    </ul>
+  </div>
+
+  <section class="home-section">
+    <div class="text">Dashboard</div>
+</section>
+
+
+  <script>
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  sidebar.classList.toggle("open");
+
+
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();//calling the function(optional)
+  });
+
+
+
+  // following are the code to change sidebar button(optional)
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+   }
+  }
+  </script>
+</body>
+</html>
